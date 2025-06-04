@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Personal Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <h1>My Dashboard</h1>
+    <ul>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#todo">To-Do</a></li>
+    </ul>
+  </nav>
+
+  <main class="grid-layout">
+    <!-- Contact Form -->
+    <section id="contact" class="card">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+        <div id="formErrors"></div>
+      </form>
+    </section>
+
+    <!-- To-Do List -->
+    <section id="todo" class="card">
+      <h2>To-Do List</h2>
+      <input type="text" id="taskInput" placeholder="New Task">
+      <button id="addTask">Add</button>
+      <ul id="taskList"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
